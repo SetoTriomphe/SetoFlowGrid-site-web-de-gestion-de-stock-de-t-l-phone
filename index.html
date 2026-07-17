@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>presentation</title>
+</head>
+<link rel="stylesheet" href="jolie.css">
+<body>
+    <div class="header">
+    <h1>SetoFlowgrid</h1>
+    <p>Bienvenue dans votre gestionnaire de stock</p>
+    </div>
+
+    <div class="form-card">
+
+        <form id="formConnexion">
+            <h1>connectez vous a votre compte</h1><br><br>
+            <input type="email" id="email2" placeholder="entrez votre email"><br><br>
+            <input type="password" id="password" placeholder="mot de passe(min 6 et max 8 caractere)" minlength="6" maxlength="8" required><br><br>
+            <button id="btn2" type="submit" >Entrez</button><br><br>
+            <h5> N.B: Si le compte n'existe pas vous ne pourrez pas vous connecter</h5><br><br>
+        </form>
+        <form id="formInscription">
+            <h1>Creez un compte</h1>
+            <p>Information sur l'entréprise</p><br>
+            <input type="text" id="NomDeVotreEntreprise" placeholder="nom de votre entreprise" required><br><br>
+            <input type="password" id="MotDePasse" placeholder="votre mot de passe (min 6 et max 8 caractere)" minlength="6" maxlength="8" required><br><br>
+            <input type="tel" id="numero1" placeholder="Numero de telephone" required><br><br>
+            <input type="email" id="email1" placeholder="votre email"required><br><br><br>
+            <button id="btn1" type="submit">Enregistré</button><br><br>
+            <h5> N.B: Aprés avoir creé votre compte veiller reécrire votre email <br> et votre mot de passe sur le formulaire de connexion</h5><br>
+        </form>
+
+    </div>
+
+    <script src="connexion.js"></script>   
+</body>
+</html>
