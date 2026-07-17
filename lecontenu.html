@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seto FlowGrid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--header-->
+
+    <div class="header">
+        <h1>Seto FlowGrid</h1>
+        <p>Application de Gestion des Stocks de Téléphones</p>
+    </div>
+
+    <!--le contenue-->
+
+    <div class="container">
+
+        <!--le tableau de bord-->
+
+        <div class="dashboard">
+            <div class="card">
+                <h3>Produits</h3>
+                <h2 id="nbProduits">0</h2>
+            </div>
+            <div class="card">
+                <h3>Stock Total</h3>
+                <h2 id="stockTotal">0</h2>
+            </div>
+            <div class="card">
+                <h3>Recettes ($)</h3>
+                <h2 id="recette">0</h2>
+            </div>
+        </div>
+            <!--le formulaire-->
+
+        <div class="form-card">
+            <h2>Ajouter un Téléphone</h2>
+            
+            <input type="text" id="nom" placeholder="Nom du téléphone">
+            <input type="number" id="prix" placeholder="Prix ($)">
+            <input type="number" id="stock" placeholder="Quantité en stock">
+            
+            <button class="btn-ajouter" onclick="ajouterProduit()">Ajouter</button>
+        </div>
+
+        <div class="section-produits">
+            <h2>Liste des Téléphones</h2>
+            <div id="liste">
+                </div>
+        </div>
+
+        <footer style="margin-top: 5px; text-align: center;">
+            <div style="display: inline-flex; align-items: center; justify-content: center; gap: 15px;">
+                
+                <p style="margin: 0; opacity: 0.5;">&copy; 2026 Seto FlowGrid - Gestion des Stocks</p>
+                
+                <button onclick="reinitialiserTout()" style="background: transparent; color: #777; border: none; padding: 3px 5px; cursor: pointer; font-size: 11px; font-family: inherit; opacity: 0.4; transition: all 0.2s;" onmouseover="this.style.opacity='1'; this.style.color='#ff4d4d'" onmouseout="this.style.opacity='0.4'; this.style.color='#777'">
+                    🔄 Réinitialiser
+                </button>
+
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+
+/* ===== RESET ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Arial, Helvetica, sans-serif;
+}
+
+
+/* ===== LE CORPS ===== */
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* ===== LE HAUT ===== */
+
+.header{
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.header h1{
+    font-size:2.5rem;
+}
+
+.header p{
+    margin-top:10px;
+    font-size:1rem;
+}
+
+/* ===== Le contenue ===== */
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+/* ===== LE TABLEAU DE BORD ===== */
+
+.dashboard{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.card{
+    flex:1;
+    min-width:200px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color:#240cc1;
+    margin-bottom:10px;
+}
+
+/* ===== FORMULAIRE ===== */
+
+.form-card{
+    background:white;
+    padding:25px;
+    margin-top:30px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.form-card h2{
+    margin-bottom:15px;
+    color:#1e3a8a;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #b5b8b5;
+    border-radius:10px;
+    font-size:15px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#1552cd;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+/* ===== BOUTON AJOUT ===== */
+
+.btn-ajouter{
+    background:#2563eb;
+    color:white;
+}
+
+.btn-ajouter:hover{
+    background:#1d4bd4;
+}
+
+/* ===== LISTE ===== */
+
+.section-produits{
+    margin-top:30px;
+}
+
+.section-produits h2{
+    margin-bottom:20px;
+    color:#1e3a8a;
+}
+
+#liste{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* ===== CARTE PRODUIT ===== */
+
+.produit{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.produit:hover{
+    transform:translateY(-5px);
+}
+
+.produit h3{
+    margin-bottom:10px;
+}
+
+.produit p{
+    margin-bottom:8px;
+}
+
+.actions{
+    margin-top:15px;
+    display:flex;
+    gap:10px;
+}
+
+.btn-vendre{
+    background:#16a34a;
+    color:white;
+    flex:1;
+}
+
+.btn-vendre:hover{
+    background:#15803d;
+}
+
+.btn-supprimer{
+    background:rgb(204, 29, 29);
+    color:white;
+    flex:1;
+}
+
+.btn-supprimer:hover{
+    background:#e71b1b;
+}
+
+/* ===== LE FOOTER ===== */
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    color:#777;
+}
+
+/* ===== RESPONSIVE ===== */
+
+
+@media(max-width:768px){
+
+.dashboard{
+    flex-direction:column;
+}
+
+.header h1{
+    font-size:2rem;
+}
+
+}
+
+
